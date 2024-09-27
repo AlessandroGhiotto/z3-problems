@@ -1,3 +1,28 @@
+;starting position:
+;---------------------
+;| 1  | 2  | 3  | 4  |
+;---------------------
+;| 5  | 6  | 7  | 8  |
+;---------------------
+;| 9  | 10 | 11 | 12 |
+;---------------------
+;| 13 | 14 | 15 | '0' |
+;---------------------
+
+;You can move the numbers by sliding them (vertically or horizontally) 
+;in the next cell as long as it is empty. Not all configurations are 
+;reachable in this way. Show that the following is reachable:
+
+;---------------------
+;| 1  | 3  | 6  | 4  |
+;---------------------
+;| 5  | 2  | 8  | 12 |
+;---------------------
+;| 9  | 10 | 7  | 15 |
+;---------------------
+;| 13 | 14 | 11 |    |
+;---------------------
+
 
 (declare-const A0 (Array Int Int))
 (declare-const I0 Int)
@@ -32,32 +57,6 @@
 (declare-const A10 (Array Int Int))
 (declare-const I10 Int)
 (declare-const J10 Int)
-
-
-;starting position:
-;---------------------
-;| 1  | 2  | 3  | 4  |
-;---------------------
-;| 5  | 6  | 7  | 8  |
-;---------------------
-;| 9  | 10 | 11 | 12 |
-;---------------------
-;| 13 | 14 | 15 | '0' |
-;---------------------
-
-;You can move the numbers by sliding them (vertically or horizontally) 
-;in the next cell as long as it is empty. Not all configurations are 
-;reachable in this way. Show that the following is reachable:
-
-;---------------------
-;| 1  | 3  | 6  | 4  |
-;---------------------
-;| 5  | 2  | 8  | 12 |
-;---------------------
-;| 9  | 10 | 7  | 15 |
-;---------------------
-;| 13 | 14 | 11 |    |
-;---------------------
 
 ;START
 (define-fun START ( (A (Array Int Int)) ) Bool
